@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+    <title>Presupuesto - Hashem Kreishan</title>
+    <!-- Título ajustado para reflejar el propósito de la página -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Encabezado del sitio -->
+    <header>
+      <div class="logo">
+        <!-- Enlace con logo, mejorando la navegación -->
+        <a href="../index.html" aria-label="Volver a la página de inicio">
+          <img
+            id="logoImg"
+            src="../images/logo.png"
+            alt="Logotipo de Hashem Kreishan Plant Store"
+          />
+        </a>
+      </div>
+      <br />
+      <!-- Barra de navegación -->
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html" class="active" aria-current="page"
+              >Inicio</a
+            >
+          </li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./presupuesto.html">Presupuesto</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Sección de formulario de presupuesto -->
+      <section id="form">
+        <h2>Solicite un presupuesto</h2>
+        <form>
+          <!-- Campo para el nombre del usuario -->
+          <label for="name">Nombre:</label>
+          <input
+            minlength="5"
+            maxlength="20"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ingrese su nombre"
+            required
+          />
+
+          <!-- Campo para el correo electrónico -->
+          <label for="email">Correo electrónico:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ingrese su correo"
+            required
+          />
+
+          <!-- Campo para el número de teléfono -->
+          <label for="phone">Teléfono:</label>
+          <input
+            minlength="11"
+            maxlength="11"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Ingrese su teléfono"
+            required
+          />
+
+          <!-- Campo para la solicitud -->
+          <label for="info">Solicitud:</label>
+          <textarea
+            id="info"
+            name="info"
+            rows="5"
+            placeholder="Describa su solicitud"
+            required
+          ></textarea>
+
+          <!-- Casilla de aceptación de la política de privacidad -->
+          <label>
+            <input type="checkbox" required /> Acepto la política de privacidad.
+          </label>
+
+          <!-- Botón de envío -->
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy; 2024 Hashem Kreishan</p>
+      <div class="social">
+        <!-- Enlaces a redes sociales con iconos accesibles -->
+        <a href="#" aria-label="Visítanos en Facebook">
+          <img
+            id="fbimg"
+            src="../images/facebook.png"
+            alt="Icono de Facebook"
+          />
+        </a>
+        <a href="#" aria-label="Síguenos en Twitter">
+          <img id="ximg" src="../images/twitter.png" alt="Icono de Twitter" />
+        </a>
+        <a href="#" aria-label="Conéctate en LinkedIn">
+          <img
+            id="linkedinimg"
+            src="../images/linkedin.png"
+            alt="Icono de LinkedIn"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
